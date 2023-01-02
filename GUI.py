@@ -31,7 +31,7 @@ class FreeFormDeformationWidget(QWidget):
         self.mesh_spacing = self.mesh_range / (self.mesh_size + 1.)
 
         # initialize images
-        self.win_img_size = np.int(np.floor(self.mesh_range - 2 * self.mesh_spacing))
+        self.win_img_size = np.int32(np.floor(self.mesh_range - 2 * self.mesh_spacing))
         self.win_img = 255 * np.ones((self.win_img_size, self.win_img_size, 3))
         self.original_img_size = self.win_img_size
         self.original_img = self.win_img
@@ -201,7 +201,7 @@ class FreeFormDeformationWidget(QWidget):
             # need to re-initialize meshes
             self.mesh_size = mesh_size
             self.mesh_spacing = self.mesh_range / (self.mesh_size + 1.)
-            self.win_img_size = np.int(np.floor(self.mesh_range - 2 * self.mesh_spacing))
+            self.win_img_size = np.int32(np.floor(self.mesh_range - 2 * self.mesh_spacing))
             self.original_mesh = np.ones((2, self.mesh_size + 3, self.mesh_size + 3))
             for i in range(self.mesh_size + 3):
                 for j in range(self.mesh_size + 3):

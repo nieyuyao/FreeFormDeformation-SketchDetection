@@ -1,5 +1,5 @@
 moviepy
-PyQt5
+pyqt5
 argparse
 colour
 numpy
@@ -11,7 +11,5 @@ opencv-contrib-python-headless
 pycairo
 pydub
 pygments
-pyreadline; sys_platform == 'win32'
-PyQt5
 matplotlib
 torch
