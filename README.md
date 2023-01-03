@@ -65,6 +65,18 @@ pip uninstall opencv-python
 # Or, you may need to try this: pip uninstall opencv-contrib-python
 ```
 
+#### 3. `module 'sipbuild.api' has no attribute 'prepare_metadata_for_build_wheel'` on M1
+
+```bash
+brew install pyqt5
+```
+Copying pyqt@5 to env directory
+
+```bash
+cp -r /opt/homebrew/Cellar/pyqt@5/5.15.7_2/lib/python3.9/site-packages/ ${your_env_directory}/FFD/lib/python3.9/site-packages
+```
+
+
 Then, install the headless version:
 
 ```
